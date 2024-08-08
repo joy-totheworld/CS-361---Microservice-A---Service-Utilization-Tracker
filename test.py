@@ -9,14 +9,17 @@ UnusedSubscriptions = []
 UsedSubscriptions = []
 NeededSubscriptions = []
 
+# Acceptable JSON Examples for Subscription Tracker
 jsonSubTrackerUsedReq = {"sender": "subscription-tracker", "services": ["Netflix", "Duolingo", "Dashpass", "Adobe Creative Cloud"], "requested": "Used"}
 jsonSubTrackerUnusedReq = {"sender": "subscription-tracker", "services": ["Netflix", "Duolingo", "Dashpass", "Adobe Creative Cloud"], "requested": "Unused"}
 jsonSubTrackerNeededReq = {"sender": "subscription-tracker", "services": ["Netflix", "Duolingo", "Dashpass", "Adobe Creative Cloud"], "requested": "Needed"}
 
+# Acceptable JSON Examples for Task Manager
 jsonTaskManagerUsedReq = {"sender": "task-manager", "services": ["Adobe Creative Cloud", "Office 365"], "requested": "Used"}
 jsonTaskManagerUnusedReq = {"sender": "task-manager", "services": ["Adobe Creative Cloud", "Office 365"], "requested": "Unused"}
 jsonTaskManagerNeededReq = {"sender": "task-manager", "services": ["Adobe Creative Cloud", "Office 365"], "requested": "Needed"}
 
+# Empty JSON for assignment for values
 jsonReq = {"sender": "", "services": [], "requested": ""}
 subTrackerData = ["Netflix", "Duolingo", "Dashpass", "Adobe Creative Cloud"]
 taskManagerData = ["Adobe Creative Cloud", "Office 365"]
