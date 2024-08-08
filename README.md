@@ -36,3 +36,5 @@ Pseudocode for this microservice:
         socket.send_json({“error”: “no”, “subscriptions”: [“”, “”]})
     Else:
         socket.send_json({“error”: “yes”, “subscriptions”: []})
+
+![alt text](image.png)
