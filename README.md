@@ -5,7 +5,6 @@
 
  To request data to this service utilization tracker microservice, a required parameter will be a JSON with the following fields:
     {“sender”: “”, “services”: [“”, “”], “requested”: “”}
-
     - The request-type field of the JSON parameter will contain a string reading "subscription-tracker" or "task-manager".
     - The services field of the JSON parameter will contain an array of strings, where each string is the name is the name of a subscription/service. The subscription tracker will send an array containing the name of every exsisting subscription, whereas the task manager will send an array containing the name of every service needed for planned tasks. 
     - The requested field of the JSON parameter will contain a string reading either "Used", "Unused", or "Needed"
@@ -18,6 +17,7 @@
 
 
 Pseudocode for requesting program:
+
     socket.send_json({“sender”: “”, “services”: [“”, “”], “requested”: “”})
     response = socket.recv_json
 
